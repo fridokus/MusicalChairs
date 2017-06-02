@@ -1,4 +1,4 @@
-import falcon
+import falcon 
 import json
 
 size = 4
@@ -19,8 +19,9 @@ class ScanBoard(object):
         resp.body = json.dumps(body)
 
 class SitDown(object):
-    def on_get(self, req, resp, x, y):
+    def on_get(self, req, resp, userID, x, y):
         resp.status = falcon.HTTP_200
+        
 
 # def addRoute(obj, route):
 #     api = falcon.API()
