@@ -1,3 +1,11 @@
-insert into player(name, alive, sit_coordinates, scans_left, id, last_chair)
+truncate chair cascade;
+insert into chair
 values
- ("Janne", true, '{2,3}', 2, 1, 3)
+(3, '{2, 3}');
+truncate player cascade;
+insert into player(name, alive, sit_coordinates, scans_left, id, last_chair, log)
+values
+('Janne', true, '{2, 3}', 2, 1, 3, '{"hej"}'),
+('Oskar', true, '{2, 3}', 2, 2, 3, '{"hej", "san"}');
+ 
+
