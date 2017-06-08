@@ -1,0 +1,13 @@
+ScanBoard:
+
+    input: {playerId}:{x}:{y}
+    
+    output: {'status': status, 'chairId': chairId}
+        chairId: ID of chair
+        status:
+            -1: No scans left for player with ID playerID
+            0: No chair found at (x, y)
+            1: Chair found at (x, y)
+
+
+
